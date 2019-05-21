@@ -11,6 +11,8 @@ date: "College de France // May 2019"
 
 # Genomic landscapes
 
+##
+
 
 ![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
 
@@ -189,8 +191,7 @@ The data:
 
 - chromosome-level genome assembly
 - $20\times$ coverage of 8 taxa and outgroup (*M.clevelandii*)
-- diversity ($\pi$), divergence ($d_{xy}$),
-    and differentiation ($F_{ST}$) in windows
+- diversity ($\pi$) and divergence ($d_{xy}$) in windows
 - 36 pairwise comparisons among 9 taxa
 - estimates of recombination rate and gene density
     from map and annotation
@@ -200,6 +201,8 @@ The data:
 
 ![](figs/aurantiacus/distributions.png)
 -->
+
+# Landscapes of bush monkeyflower
 
 -------------------
 
@@ -211,8 +214,15 @@ The data:
 -------------------
 
 ::: {.centered}
-![](figs/aurantiacus/lg1.png){ width="46%" }
 ![](figs/aurantiacus/just_phylogeny.png){ width="47%" }
+![](figs/aurantiacus/pi_cor.png){ width="46%" }
+:::
+
+
+-------------------
+
+::: {.centered}
+![](figs/aurantiacus/just_phylogeny.png){ width="60%" }
 :::
 
 
@@ -356,13 +366,17 @@ The data:
 ::::
 ::::::::
 
+--------------------
+
+![](figs/aurantiacus/divergence_by_node_LG3.png)
+
 # Conclusions
 
 ## Observations
 
-> 1. $d_{xy}$ is the same for different pairs of taxa separated by the same node in the phylogeny.
+> 1. $d_{xy}$ is similar but not the same for different pairs of taxa separated by the same node in the phylogeny.
 > 
->     - ![Rightarrow](figs/finger_right.png){.finger width="15%"} recent introgression is rare
+>     - ![Rightarrow](figs/finger_right.png){.finger width="15%"} some early introgression
 > 
 > 2. At first, $d_{xy}$ is like $\pi$ but shifted up.
 > 
@@ -371,7 +385,7 @@ The data:
 > 3. But then $d_{xy}$ starts to flatten out.
 > 
 >     - ![Rightarrow](figs/finger_right.png){.finger width="15%"}  increased *fixation* rate due to positive mutation?
->     - or, bioinformatic wierdness?
+>     - or, something about repeats?
 
 
 

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Peter Ralph">
+  <title>Genomic landscapes and fitness ridges</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  
+  .reveal { font-size: 30px; }
+  
+  .reveal h1 { font-size: 1.5em; } 
+  
+  .reveal h2 { font-size: 1.2em; } 
+  
+  .reveal .slides { text-align: left; }
+  
+  .reveal .slides figure { text-align: center; }
+  
+  .centered p { text-align: center; }
+  
+  .reveal figcaption { display: none; }
+  
+  .reveal img { border: none; }
+  
+  .reveal section img { border: none; }
+  
+  .MathJax_Display { margin: 0; }
+  
+  img.finger { vertical-align: text-top; }
+  
+  </style>
+  <div style="display: none">
+  \[
+  \]
+  </div>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Genomic landscapes and fitness ridges</h1>
+  <p class="subtitle">across the speciation continuum</p>
+  <p class="author">Peter Ralph</p>
+  <p class="date">College de France // May 2019</p>
+</section>
+
+<section><section id="genomic-landscapes" class="title-slide slide level1"><h1>Genomic landscapes</h1></section><section id="section" class="slide level2">
+<h2></h2>
+<figure>
+<img data-src="figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png" alt="Langley et al 2012" /><figcaption>Langley et al 2012</figcaption>
+</figure>
+<!--
+## *Homo sapiens*
+
+![Hernandez et al 2011](figs/from_the_literature/hernandez-2011-dip-in-diversity.png)
+
+*Hernandez et al 2011*
+-->
+</section><section id="diversity-correlates-with-recombination-rate" class="slide level2">
+<h2>Diversity correlates with recombination rate</h2>
+<figure>
+<img data-src="figs/from_the_literature/corbett-detig-divergence-recomb-drosophila.png" alt="Corbett-Detig et al" /><figcaption>Corbett-Detig et al</figcaption>
+</figure>
+<p>Corbett-Detig et al 2015; Cutter &amp; Payseur 2013</p>
+</section><section class="slide level2">
+
+<figure>
+<img data-src="figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png" alt="Corbett-Detig et al" style="width:70.0%" /><figcaption>Corbett-Detig et al</figcaption>
+</figure>
+<p>Corbett-Detig et al 2015</p>
+<!--
+-------------------
+
+![McVicker et al 2009](figs/from_the_literature/mcvicker-2009-hu_chr1-landscape.png)
+![](figs/from_the_literature/mcvicker-2009-hu_chr1-landscape-caption.png)
+
+McVicker et al 2009
+-->
+</section><section id="section-1" class="slide level2">
+<h2></h2>
+<p>What causes variation in genetic diversity?</p>
+</section><section id="section-2" class="slide level2">
+<h2></h2>
+<p><span class="math display">\[
+\begin{aligned}
+\pi &amp;= \text{ (within-pop diversity) } \\
+d_{xy} &amp;= \text{ (between-pop divergence) } \\
+F_{ST} &amp;= \text{ (relative differentiation) }
+\end{aligned}
+\]</span></p>
+<div class="centered">
+<p><img data-src="figs/fst_tree.png" style="width:60.0%" /></p>
+</div>
+<!-- section THEORY -->
+</section></section>
+<section><section id="linked-selection-in-theory" class="title-slide slide level1"><h1>Linked selection, in theory</h1></section><section class="slide level2">
+
+<dl>
+<dt>linked selection</dt>
+<dd><p>The indirect effects of selection on genomic locations that are <em>linked</em> to the sites under selection by a lack of recombination.</p>
+</dd>
+</dl>
+<div class="centered">
+<p><img data-src="figs/sweep_haps.png" class="fragment" style="width:40.0%" /> <img data-src="figs/background_haps.png" class="fragment" style="width:40.0%" /></p>
+</div>
+</section><section class="slide level2">
+
+<p><strong>Linked Selection: a field guide</strong></p>
+<p><em>composed of rough sketches</em></p>
+<div class="fragment">
+<p><em>citations: numerous</em></p>
+</div>
+</section><section id="neutrality" class="slide level2">
+<h2>0. Neutrality</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-site-neutral_early.png" /></p>
+</section><section id="neutrality-1" class="slide level2">
+<h2>0. Neutrality</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-site-neutral.png" /></p>
+</section><section id="a-hard-sweep" class="slide level2">
+<h2>1. A “hard” sweep</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-site-hard.png" /></p>
+</section><section id="a-soft-sweep" class="slide level2">
+<h2>2. A “soft” sweep</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-site-soft.png" /></p>
+</section><section id="adaptive-introgression" class="slide level2">
+<h2>3. Adaptive introgression</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-site-introgression.png" /></p>
+</section><section id="local-adaptation-with-gene-flow" class="slide level2">
+<h2>4. Local adaptation with gene flow</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-site-local_adaptation.png" /></p>
+<!-- [Bierne 2010](https://doi.org/10.1111%2fj.1558-5646.2010.01050.x) -->
+</section><section id="background-selection" class="slide level2">
+<h2>5. Background selection</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-region-background.png" /></p>
+</section><section id="recurrent-sweeps" class="slide level2">
+<h2>6. Recurrent sweeps</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-region-recurrent_sweeps.png" /></p>
+</section><section id="recurrent-introgression" class="slide level2">
+<h2>7. Recurrent introgression</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-region-recurrent_introgression.png" /></p>
+</section><section id="etcetera" class="slide level2">
+<h2>Etcetera</h2>
+<ol start="8" type="1">
+<li><p>Recent balanching selection</p></li>
+<li><p>Long-term balancing selection</p></li>
+<li><p>Recurrent local adaptation after a split</p></li>
+<li><p>Recurrent, transient balancing selection</p></li>
+<li><p>All of the above?</p></li>
+</ol>
+<!-- AURENTIACUS -->
+</section></section>
+<section><section id="how-do-genetic-landscapes-change-over-time" class="title-slide slide level1"><h1>How do genetic landscapes change over time?</h1></section><section id="the-mimulus-aurantiacus-species-complex" class="slide level2">
+<h2>The <em>Mimulus aurantiacus</em> species complex</h2>
+<div class="centered">
+<p><img data-src="figs/aurantiacus/phylogeny.png" /></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img data-src="figs/aurantiacus/stankowski-color-cline.png" style="width:70.0%" /></p>
+</div>
+</section><section class="slide level2">
+
+<figure>
+<img data-src="figs/aurantiacus/preprint.png" alt="https://www.biorxiv.org/content/early/2018/06/21/342352" /><figcaption>https://www.biorxiv.org/content/early/2018/06/21/342352</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img data-src="figs/aurantiacus/preprint_peeps.png" alt="https://www.biorxiv.org/content/early/2018/06/21/342352" /><figcaption>https://www.biorxiv.org/content/early/2018/06/21/342352</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<p>The data:</p>
+<ul>
+<li>chromosome-level genome assembly</li>
+<li><span class="math inline">\(20\times\)</span> coverage of 8 taxa and outgroup (<em>M.clevelandii</em>)</li>
+<li>diversity (<span class="math inline">\(\pi\)</span>) and divergence (<span class="math inline">\(d_{xy}\)</span>) in windows</li>
+<li>36 pairwise comparisons among 9 taxa</li>
+<li>estimates of recombination rate and gene density from map and annotation</li>
+</ul>
+<!--
+## A spectrum of differentiation
+
+![](figs/aurantiacus/distributions.png)
+-->
+</section></section>
+<section><section id="landscapes-of-bush-monkeyflower" class="title-slide slide level1"><h1>Landscapes of bush monkeyflower</h1></section><section class="slide level2">
+
+<div class="centered">
+<p><img data-src="figs/aurantiacus/lg1.png" style="width:46.0%" /> <img data-src="figs/aurantiacus/lg3.png" style="width:47.0%" /></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img data-src="figs/aurantiacus/just_phylogeny.png" style="width:47.0%" /> <img data-src="figs/aurantiacus/pi_cor.png" style="width:46.0%" /></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img data-src="figs/aurantiacus/just_phylogeny.png" style="width:60.0%" /></p>
+</div>
+</section><section class="slide level2">
+
+<!--
+![](figs/aurantiacus/emergence_of_fst_0.png)
+![](figs/aurantiacus/emergence_of_fst_1.png)
+![](figs/aurantiacus/emergence_of_fst_2.png)
+![](figs/aurantiacus/PUN_AUS_fst.png)
+![](figs/aurantiacus/PUN_CAL_fst.png)
+![](figs/aurantiacus/PUN_LON_fst.png)
+![](figs/aurantiacus/PUN_AUR_fst.png)
+![](figs/aurantiacus/PUN_FLE_fst.png)
+![](figs/aurantiacus/PUN_ARI_fst.png)
+![](figs/aurantiacus/PUN_BIF_fst.png)
+![](figs/aurantiacus/PUN_CLV_fst.png)
+![](figs/aurantiacus/cor-across-time-0.png)
+![](figs/aurantiacus/cor-across-time-1.png)
+![](figs/aurantiacus/cor-across-time-2.png)
+-->
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_puniceus_LG3.png" /></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="figs/aurantiacus/labeled_phylogeny_puniceus.png" style="width:250.0%" /></p>
+</div>
+</div>
+</section><section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_long-caly_LG3.png" /></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="figs/aurantiacus/labeled_phylogeny_long-caly.png" style="width:250.0%" /></p>
+</div>
+</div>
+</section><section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_caly_LG3.png" /></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="figs/aurantiacus/labeled_phylogeny_caly.png" style="width:250.0%" /></p>
+</div>
+</div>
+</section><section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_aura_LG3.png" /></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="figs/aurantiacus/labeled_phylogeny_aura.png" style="width:250.0%" /></p>
+</div>
+</div>
+</section><section id="section-3" class="slide level2">
+<h2><!--
+---------------------
+
+:::: {.columns}
+:::::::: {.column width=80%}
+
+![](figs/aurantiacus/rising_landscapes/divergence_by_node_arid-parv_LG3.png)
+
+::::
+:::::::: {.column width=20%}
+
+![](figs/aurantiacus/labeled_phylogeny_arid-parv.png){width="250%"}
+
+::::
+::::::::
+--></h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_parv_LG3.png" /></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="figs/aurantiacus/labeled_phylogeny_parv.png" style="width:250.0%" /></p>
+</div>
+</div>
+</section><section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_gran_LG3.png" /></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="figs/aurantiacus/labeled_phylogeny_gran.png" style="width:250.0%" /></p>
+</div>
+</div>
+</section><section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_all_LG3.png" /></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="figs/aurantiacus/labeled_phylogeny_all.png" style="width:250.0%" /></p>
+</div>
+</div>
+</section><section class="slide level2">
+
+<p><img data-src="figs/aurantiacus/divergence_by_node_LG3.png" /></p>
+</section></section>
+<section><section id="conclusions" class="title-slide slide level1"><h1>Conclusions</h1></section><section id="observations" class="slide level2">
+<h2>Observations</h2>
+<ol type="1">
+<li class="fragment"><p><span class="math inline">\(d_{xy}\)</span> is similar but not the same for different pairs of taxa separated by the same node in the phylogeny.</p>
+<ul>
+<li class="fragment"><img data-src="figs/finger_right.png" alt="Rightarrow" class="finger" style="width:15.0%" /> some early introgression</li>
+</ul></li>
+<li class="fragment"><p>At first, <span class="math inline">\(d_{xy}\)</span> is like <span class="math inline">\(\pi\)</span> but shifted up.</p>
+<ul>
+<li class="fragment"><img data-src="figs/finger_right.png" alt="Rightarrow" class="finger" style="width:15.0%" /> good.</li>
+</ul></li>
+<li class="fragment"><p>But then <span class="math inline">\(d_{xy}\)</span> starts to flatten out.</p>
+<ul>
+<li class="fragment"><img data-src="figs/finger_right.png" alt="Rightarrow" class="finger" style="width:15.0%" /> increased <em>fixation</em> rate due to positive mutation?</li>
+<li class="fragment">or, something about repeats?</li>
+</ul></li>
+</ol>
+</section><section id="section-4" class="slide level2">
+<h2></h2>
+<ul>
+<li><p>Evolution of the landscape of diversity across <span class="math inline">\(\approx\)</span> 1.5 million years!</p></li>
+<li><p>Shared targets of linked selection across taxa?</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>But, what <em>kind</em> of linked selection?<br />
+How strongly and frequently does it act?<br />
+On how many targets?</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Consequences for: genetic load/disease, speed of evolution, trait architecture.</p>
+</div>
+</section></section>
+<section><section id="network-drift" class="title-slide slide level1"><h1>Network drift</h1></section><section id="section-5" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The data suggest <strong>lots</strong> of selection.</p>
+<p>What kind? Is this plausible?</p>
+<p><img data-src="figs/finger_right.png" alt="Rightarrow" class="finger" style="width:15.0%" /> We need explicit models.</p>
+</div><div class="column" style="width:50%;">
+<figure>
+<img data-src="figs/kalman_walk/jsschiffman.jpg" alt="Josh" /><figcaption>Josh</figcaption>
+</figure>
+<p>Josh Schiffman</p>
+</div>
+</div>
+</section><section id="section-6" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>At time <span class="math inline">\(t\)</span>,</p>
+<p><span class="math inline">\(\kappa(t)\)</span> : internal state<br />
+(<span class="math inline">\(n\)</span>-vector of expression levels)</p>
+<p><span class="math inline">\(\phi(t)\)</span> : <span class="math inline">\(k\)</span>-vector of phenotype</p>
+<p><span class="math inline">\(u(t)\)</span> : <span class="math inline">\(\ell\)</span>-vector of input signals</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{aligned}
+    \dot \kappa(t) &amp;= A \kappa(t) + B u(t) \\
+    \phi(t) &amp;= C \kappa(t) 
+\end{aligned}\]</span></p>
+<p>where</p>
+<p><span class="math inline">\(A\)</span> : <span class="math inline">\(n \times n\)</span> matrix of interactions</p>
+<p><span class="math inline">\(B\)</span> : <span class="math inline">\(n \times \ell\)</span> input to internal state</p>
+<p><span class="math inline">\(C\)</span> : <span class="math inline">\(k \times n\)</span> internal state to output</p>
+</div>
+</div>
+</section><section id="section-7" class="slide level2">
+<h2></h2>
+<p>If <span class="math inline">\(\phi(0) = 0\)</span>, <span class="math display">\[\begin{aligned}
+    \phi(t) = \int_0^t  h(t-s) u(s) ds .
+\end{aligned}\]</span> where <span class="math display">\[\begin{aligned}
+    h(s) = C e^{sA} B
+\end{aligned}\]</span></p>
+</section><section id="are-systems-unique" class="slide level2">
+<h2>Are systems unique?</h2>
+<p>How many <em>systems</em> <span class="math inline">\((A, B, C)\)</span> have the <em>same</em> input-output behavior, <span class="math display">\[\begin{aligned}
+    u \mapsto \phi,
+\end{aligned}\]</span> if any?</p>
+<div class="fragment">
+<p>Answer: generically, <strong>lots</strong> (Kalman 1963).</p>
+</div>
+</section><section id="example-two-gene-oscillator" class="slide level2">
+<h2>Example: two-gene oscillator</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{aligned}
+    A &amp;= \begin{bmatrix}
+    0 &amp; 1 \\
+    -1 &amp; 0
+    \end{bmatrix} \\
+    B &amp;= \begin{bmatrix}
+    1 \\ 1 \end{bmatrix} \\
+    C &amp;= \begin{bmatrix}
+    1 &amp; 0 \end{bmatrix}
+\end{aligned}\]</span></p>
+<p><img data-src="figs/kalman_walk/osc_impulse.png" style="width:80.0%" /></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="figs/kalman_walk/oscillator_1.png" style="width:70.0%" /></p>
+</div>
+</div>
+</section><section id="example-two-gene-oscillator-1" class="slide level2">
+<h2>Example: two-gene oscillator</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{aligned}
+    A &amp;= \begin{bmatrix}
+    1 + \frac{1}{\tau - 1} &amp; 2 \tau + \frac{1}{\tau - 1} \\
+    \frac{-1}{\tau - 1} &amp; - 1 - \frac{1}{\tau - 1}
+    \end{bmatrix} \\
+    B &amp;= \begin{bmatrix}
+    1 \\ 1 \end{bmatrix} \\
+    C &amp;= \begin{bmatrix}
+    1 &amp; 0 \end{bmatrix}
+\end{aligned}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="figs/kalman_walk/oscillator_2.png" /></p>
+</div>
+</div>
+</section><section id="example-two-gene-oscillator-2" class="slide level2">
+<h2>Example: two-gene oscillator</h2>
+<div class="centered">
+<p><img data-src="figs/kalman_walk/oscillator_3.png" style="width:70.0%" /></p>
+</div>
+</section><section id="consequences-for-speciation" class="slide level2">
+<h2>Consequences for speciation?</h2>
+<div class="centered">
+<p><img data-src="figs/kalman_walk/conceptual_fig.png" style="width:100.0%" /></p>
+</div>
+</section></section>
+<section><section id="summary" class="title-slide slide level1"><h1>Summary</h1></section><section class="slide level2">
+
+<ul>
+<li class="fragment">Landscapes of genetic diversity are clues to the ongoing types and intensities of natural selection.</li>
+</ul>
+<ul>
+<li class="fragment">We can see them emerge, and change with time.</li>
+</ul>
+<ul>
+<li class="fragment">What makes these landscapes? Still unknown.</li>
+</ul>
+<ul>
+<li class="fragment">Explicit models can provide surprising predictions.</li>
+</ul>
+</section><section id="thanks" class="slide level2">
+<h2>Thanks!</h2>
+<p>Mimulus: Madeline Chase, Sean Stankowski, Matt Streisfeld, Murillo Rodrigues</p>
+<p>Other: Josh Schiffman, Sergey Nuzhdin, Andy Kern</p>
+<p>Funding: NSF ABI, Sloan, UO</p>
+<p>Slides with <a href="http://hakim.se">reveal.js</a> and <a href="https://pandoc.org/">pandoc</a>.</p>
+<!-- MISCELLANEA -->
+</section><section id="section-8" class="slide level2">
+<h2></h2>
+<p>miscellanea</p>
+</section><section id="hitchhiking" class="slide level2">
+<h2>Hitchhiking</h2>
+<figure>
+<img data-src="figs/from_the_literature/maynard-smith-haigh-hitchhiking-dip.png" alt="Maynard Smith &amp; Haigh" /><figcaption>Maynard Smith &amp; Haigh</figcaption>
+</figure>
+</section><section id="background-selection-1" class="slide level2">
+<h2>Background selection</h2>
+<figure>
+<img data-src="figs/from_the_literature/hudson-1994-background-dip-in-diversity.png" alt="Hudson 1994" /><figcaption>Hudson 1994</figcaption>
+</figure>
+</section><section id="balanced-polymorphism" class="slide level2">
+<h2>Balanced polymorphism</h2>
+<figure>
+<img data-src="figs/from_the_literature/kreitman-hudson-fig-5.png" alt="Kreitman &amp; Hudson 1991" /><figcaption>Kreitman &amp; Hudson 1991</figcaption>
+</figure>
+</section><section id="recent-balancing-selection" class="slide level2">
+<h2>3. Recent balancing selection</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-site-recent_balancing.png" /></p>
+</section><section id="long-term-balancing-selection" class="slide level2">
+<h2>4. Long-term balancing selection</h2>
+<p><img data-src="figs/linked-selection-guide/linked-selection-site-old_balancing.png" /></p>
+</section><section id="drosophila-melanogaster" class="slide level2">
+<h2><em>Drosophila melanogaster</em></h2>
+<figure>
+<img data-src="figs/from_the_literature/mcgaugh-2012-drosophila-dip.png" alt="McGaugh et al 2012" /><figcaption>McGaugh et al 2012</figcaption>
+</figure>
+</section><section class="slide level2">
+
+<p><img data-src="figs/aurantiacus/diversity-recomb.png" /></p>
+</section><section class="slide level2">
+
+<p><img data-src="figs/aurantiacus/correlations.png" style="width:70.0%" /></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/math/math.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
