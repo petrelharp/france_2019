@@ -79,19 +79,24 @@
 ![Hernandez et al 2011](figs/from_the_literature/hernandez-2011-dip-in-diversity.png)
 
 *Hernandez et al 2011*
+
+## Diversity correlates with recombination rate
+
+![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-drosophila.png)
+
+Corbett-Detig et al 2015; Cutter & Payseur 2013 
 -->
 </section><section id="diversity-correlates-with-recombination-rate" class="slide level2">
 <h2>Diversity correlates with recombination rate</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
 <figure>
-<img data-src="figs/from_the_literature/corbett-detig-divergence-recomb-drosophila.png" alt="Corbett-Detig et al" /><figcaption>Corbett-Detig et al</figcaption>
+<img data-src="figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png" alt="Corbett-Detig et al" style="width:85.0%" /><figcaption>Corbett-Detig et al</figcaption>
 </figure>
-<p>Corbett-Detig et al 2015; Cutter &amp; Payseur 2013</p>
-</section><section class="slide level2">
-
-<figure>
-<img data-src="figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png" alt="Corbett-Detig et al" style="width:70.0%" /><figcaption>Corbett-Detig et al</figcaption>
-</figure>
-<p>Corbett-Detig et al 2015</p>
+</div><div class="column" style="width:20%;">
+<p><em>Hudson 1994; Cutter &amp; Payseur 2013; Corbett-Detig et al 2015</em></p>
+</div>
+</div>
 <!--
 -------------------
 
@@ -108,8 +113,8 @@ McVicker et al 2009
 <p><span class="math display">\[
 \begin{aligned}
 \pi &amp;= \text{ (within-pop diversity) } \\
-d_{xy} &amp;= \text{ (between-pop divergence) } \\
-F_{ST} &amp;= \text{ (relative differentiation) }
+d_{xy} &amp;= \text{ (between-pop divergence) }
+% F_{ST} &amp;= \text{ (relative differentiation) }
 \end{aligned}
 \]</span></p>
 <div class="centered">
@@ -177,11 +182,6 @@ F_{ST} &amp;= \text{ (relative differentiation) }
 <h2>The <em>Mimulus aurantiacus</em> species complex</h2>
 <div class="centered">
 <p><img data-src="figs/aurantiacus/phylogeny.png" /></p>
-</div>
-</section><section class="slide level2">
-
-<div class="centered">
-<p><img data-src="figs/aurantiacus/stankowski-color-cline.png" style="width:70.0%" /></p>
 </div>
 </section><section class="slide level2">
 
@@ -327,7 +327,7 @@ F_{ST} &amp;= \text{ (relative differentiation) }
 <ol type="1">
 <li class="fragment"><p><span class="math inline">\(d_{xy}\)</span> is similar but not the same for different pairs of taxa separated by the same node in the phylogeny.</p>
 <ul>
-<li class="fragment"><img data-src="figs/finger_right.png" alt="Rightarrow" class="finger" style="width:15.0%" /> some early introgression</li>
+<li class="fragment"><img data-src="figs/finger_right.png" alt="Rightarrow" class="finger" style="width:15.0%" /> some early introgression, but not ongoing</li>
 </ul></li>
 <li class="fragment"><p>At first, <span class="math inline">\(d_{xy}\)</span> is like <span class="math inline">\(\pi\)</span> but shifted up.</p>
 <ul>
@@ -344,17 +344,15 @@ F_{ST} &amp;= \text{ (relative differentiation) }
 <ul>
 <li><p>Evolution of the landscape of diversity across <span class="math inline">\(\approx\)</span> 1.5 million years!</p></li>
 <li><p>Shared targets of linked selection across taxa?</p></li>
+<li><p>Next: different types/intensities of linked selection (probably) predict different types of stochasticity.</p></li>
+<li><p>Also checking this with: simulations (SLiM <span class="math inline">\(+\)</span> tskit)</p></li>
 </ul>
-<div class="fragment">
-<ul>
-<li>But, what <em>kind</em> of linked selection?<br />
-How strongly and frequently does it act?<br />
-On how many targets?</li>
-</ul>
-</div>
-<div class="fragment">
-<p>Consequences for: genetic load/disease, speed of evolution, trait architecture.</p>
-</div>
+</section><section id="thanks" class="slide level2">
+<h2>Thanks!</h2>
+<p>Mimulus: Madeline Chase, Sean Stankowski, Matt Streisfeld, Murillo Rodrigues</p>
+<p>Other: Josh Schiffman, Sergey Nuzhdin, Andy Kern</p>
+<p>Funding: NSF ABI, Sloan, UO</p>
+<p>Slides with <a href="http://hakim.se">reveal.js</a> and <a href="https://pandoc.org/">pandoc</a>.</p>
 </section></section>
 <section><section id="network-drift" class="title-slide slide level1"><h1>Network drift</h1></section><section id="section-5" class="slide level2">
 <h2></h2>
@@ -363,6 +361,7 @@ On how many targets?</li>
 <p>The data suggest <strong>lots</strong> of selection.</p>
 <p>What kind? Is this plausible?</p>
 <p><img data-src="figs/finger_right.png" alt="Rightarrow" class="finger" style="width:15.0%" /> We need explicit models.</p>
+<p><a href="https://www.biorxiv.org/content/10.1101/231209v2">https://www.biorxiv.org/content/10.1101/231209v2</a></p>
 </div><div class="column" style="width:50%;">
 <figure>
 <img data-src="figs/kalman_walk/jsschiffman.jpg" alt="Josh" /><figcaption>Josh</figcaption>
@@ -403,7 +402,7 @@ On how many targets?</li>
     u \mapsto \phi,
 \end{aligned}\]</span> if any?</p>
 <div class="fragment">
-<p>Answer: generically, <strong>lots</strong> (Kalman 1963).</p>
+<p>Answer: generically, <strong>lots</strong> of degrees of freedom (Kalman 1963).</p>
 </div>
 </section><section id="example-two-gene-oscillator" class="slide level2">
 <h2>Example: two-gene oscillator</h2>
@@ -447,10 +446,16 @@ On how many targets?</li>
 <div class="centered">
 <p><img data-src="figs/kalman_walk/oscillator_3.png" style="width:70.0%" /></p>
 </div>
-</section><section id="consequences-for-speciation" class="slide level2">
-<h2>Consequences for speciation?</h2>
+</section><section id="section-8" class="slide level2">
+<h2></h2>
 <div class="centered">
 <p><img data-src="figs/kalman_walk/conceptual_fig.png" style="width:100.0%" /></p>
+</div>
+</section><section id="consequences-for-speciation" class="slide level2">
+<h2>Consequences for speciation?</h2>
+<p>If a population’s mean accumulates variance at speed <span class="math inline">\(V/N_e\)</span>, where <span class="math inline">\(V\)</span> is the genetic variance,</p>
+<div class="fragment">
+<p><img data-src="figs/finger_right.png" alt="Rightarrow" class="finger" style="width:15.0%" /> incompatibilities should arise on a time scale of <span class="math inline">\(V/N_e\)</span>.</p>
 </div>
 </section></section>
 <section><section id="summary" class="title-slide slide level1"><h1>Summary</h1></section><section class="slide level2">
@@ -467,14 +472,14 @@ On how many targets?</li>
 <ul>
 <li class="fragment">Explicit models can provide surprising predictions.</li>
 </ul>
-</section><section id="thanks" class="slide level2">
+</section><section id="thanks-1" class="slide level2">
 <h2>Thanks!</h2>
 <p>Mimulus: Madeline Chase, Sean Stankowski, Matt Streisfeld, Murillo Rodrigues</p>
 <p>Other: Josh Schiffman, Sergey Nuzhdin, Andy Kern</p>
 <p>Funding: NSF ABI, Sloan, UO</p>
 <p>Slides with <a href="http://hakim.se">reveal.js</a> and <a href="https://pandoc.org/">pandoc</a>.</p>
 <!-- MISCELLANEA -->
-</section><section id="section-8" class="slide level2">
+</section><section id="section-9" class="slide level2">
 <h2></h2>
 <p>miscellanea</p>
 </section><section id="hitchhiking" class="slide level2">

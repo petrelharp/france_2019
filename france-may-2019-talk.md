@@ -23,19 +23,30 @@ date: "College de France // May 2019"
 ![Hernandez et al 2011](figs/from_the_literature/hernandez-2011-dip-in-diversity.png)
 
 *Hernandez et al 2011*
--->
 
 ## Diversity correlates with recombination rate
 
 ![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-drosophila.png)
 
 Corbett-Detig et al 2015; Cutter & Payseur 2013 
+-->
 
---------------------
+## Diversity correlates with recombination rate
 
-![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png){width=70%}
+:::: {.columns}
+:::::::: {.column width=80%}
 
-Corbett-Detig et al 2015
+
+![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png){width=85%}
+
+::::
+:::::::: {.column width=20%}
+
+
+*Hudson 1994; Cutter & Payseur 2013; Corbett-Detig et al 2015*
+
+::::
+::::::::
 
 <!--
 -------------------
@@ -56,8 +67,8 @@ What causes variation in genetic diversity?
 $$
 \begin{aligned}
 \pi &= \text{ (within-pop diversity) } \\
-d_{xy} &= \text{ (between-pop divergence) } \\
-F_{ST} &= \text{ (relative differentiation) }
+d_{xy} &= \text{ (between-pop divergence) }
+% F_{ST} &= \text{ (relative differentiation) }
 \end{aligned}
 $$
 
@@ -168,12 +179,6 @@ The *Mimulus aurantiacus* species complex
 ![](figs/aurantiacus/phylogeny.png)
 :::
 
-
-------------------
-
-::: {.centered}
-![](figs/aurantiacus/stankowski-color-cline.png){width=70%}
-:::
 
 ----------------------------------
 
@@ -376,8 +381,8 @@ The data:
 
 > 1. $d_{xy}$ is similar but not the same for different pairs of taxa separated by the same node in the phylogeny.
 > 
->     - ![Rightarrow](figs/finger_right.png){.finger width="15%"} some early introgression
-> 
+>     - ![Rightarrow](figs/finger_right.png){.finger width="15%"} some early introgression, but not ongoing
+>
 > 2. At first, $d_{xy}$ is like $\pi$ but shifted up.
 > 
 >     - ![Rightarrow](figs/finger_right.png){.finger width="15%"}  good.
@@ -396,17 +401,22 @@ The data:
 
 - Shared targets of linked selection across taxa?
 
-. . .
+- Next: different types/intensities of linked selection 
+    (probably) predict different types of stochasticity.
 
-- But, what *kind* of linked selection? \
-    How strongly and frequently does it act? \
-    On how many targets?
+- Also checking this with: simulations (SLiM $+$ tskit)
 
-. . .
 
-Consequences for: genetic load/disease,
-speed of evolution,
-trait architecture.
+Thanks!
+-------
+
+Mimulus: Madeline Chase, Sean Stankowski, Matt Streisfeld, Murillo Rodrigues
+
+Other: Josh Schiffman, Sergey Nuzhdin, Andy Kern
+
+Funding: NSF ABI, Sloan, UO
+
+Slides with [reveal.js](http://hakim.se) and [pandoc](https://pandoc.org/).
 
 
 # Network drift
@@ -425,6 +435,8 @@ What kind? Is this plausible?
 
 ![Rightarrow](figs/finger_right.png){.finger width="15%"}
 We need explicit models.
+
+[https://www.biorxiv.org/content/10.1101/231209v2](https://www.biorxiv.org/content/10.1101/231209v2)
 
 ::::
 :::::::: {.column width=50%}
@@ -494,7 +506,7 @@ if any?
 
 . . .
 
-Answer: generically, **lots** (Kalman 1963).
+Answer: generically, **lots** of degrees of freedom (Kalman 1963).
 
 ## Example: two-gene oscillator
 
@@ -554,12 +566,22 @@ $$\begin{aligned}
 ![](figs/kalman_walk/oscillator_3.png){width="70%"}
 :::
 
-## Consequences for speciation?
+## 
 
 ::: {.centered}
 ![](figs/kalman_walk/conceptual_fig.png){width="100%"}
 :::
 
+## Consequences for speciation?
+
+If a population's mean accumulates variance at speed $V/N_e$,
+where $V$ is the genetic variance,
+
+. . .
+
+![Rightarrow](figs/finger_right.png){.finger width="15%"} 
+incompatibilities should arise on a time scale of $V/N_e$.
+    
 
 # Summary
 
