@@ -375,6 +375,20 @@ The data:
 
 ![](figs/aurantiacus/divergence_by_node_LG3.png)
 
+--------------------
+
+![](figs/aurantiacus/cor-across-time-0.png)
+
+--------------------
+
+![](figs/aurantiacus/cor-across-time-1.png)
+
+--------------------
+
+![](figs/aurantiacus/cor-across-time-2.png)
+
+
+
 # Conclusions
 
 ## Observations
